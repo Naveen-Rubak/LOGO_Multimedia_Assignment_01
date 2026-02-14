@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NexStepz | Walk Into Your Future</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #0f0f0f;
+            color: white;
+        }
+
+        /* ================= HEADER ================= */
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 70px 8% 40px;
+            background: #111;
+        }
+
+        /* ================= LOGO WRAPPER ================= */
+        .logo-wrapper {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            border: 4px solid #00f0ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .logo {
+            width: 230px;
+            height: 230px;
+            object-fit: contain;
+        }
+
+        /* ================= NAV ================= */
+        nav {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #00f0ff;
+        }
+
+        /* ================= HERO ================= */
+        .hero {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            background: linear-gradient(135deg, #000000, #1c1c1c);
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+        }
+
+        .hero span {
+            color: #00f0ff;
+        }
+
+        .hero p {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            max-width: 700px;
+            line-height: 1.6;
+            color: #ccc;
+        }
+
+        .btn {
+            margin-top: 30px;
+            padding: 14px 35px;
+            background: #00f0ff;
+            color: black;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: white;
+        }
+
+        /* ================= WHY SECTION ================= */
+        .why {
+            padding: 120px 8%;
+            text-align: center;
+            background: linear-gradient(180deg, #0f0f0f, #111);
+        }
+
+        .why h2 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 50px;
+        }
+
+        .why-content {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .why-content p {
+            font-size: 1.2rem;
+            color: #d0d0d0;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .why-content strong {
+            color: white;
+        }
+
+        /* ================= FOOTER ================= */
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #0a0a0a;
+            color: #777;
+            font-size: 0.9rem;
+        }
+
+        /* ================= RESPONSIVE ================= */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.4rem;
+            }
+
+            .logo-wrapper {
+                width: 140px;
+                height: 140px;
+            }
+
+            .logo {
+                width: 100px;
+            }
+
+            nav {
+                gap: 18px;
+            }
+
+            .why h2 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header>
+    <div class="logo-wrapper">
+        <!-- IMPORTANT: change logo.png if your file name is different -->
+        <img src="logo.png" alt="NexStepz Logo" class="logo">
+    </div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+    <h1>Walk Into Your <span>Future</span></h1>
+    <p>
+        At NexStepz, we believe that every journey is defined by the move you make next.
+        We design footwear for the modern explorer—blending cutting-edge aesthetics
+        with uncompromised comfort.
+    </p>
+    <a href="#" class="btn">Take the NexStepz</a>
+</section>
+
+<!-- ================= WHY NEXSTEPZ ================= -->
+<section class="why">
+    <h2>Why NexStepz?</h2>
+
+    <div class="why-content">
+        <p>✓ <strong>Memorability</strong> — The unique "z" makes us stand out and easy to find.</p>
+        <p>✓ <strong>Versatility</strong> — From high-performance athletic wear to sleek street style.</p>
+        <p>✓ <strong>Action-Oriented</strong> — The name itself is a call to step up and move forward.</p>
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    © 2026 NexStepz. All Rights Reserved.
+</footer>
+
+</body>
+</html>
+
